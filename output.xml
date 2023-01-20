@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.1 on win32)" generated="20220513 19:42:16.414" rpa="false" schemaversion="3">
+<suite id="s1" name="Hello" source="C:\Users\Ulaganathan.M\PycharmProjects\RobotProject\Testcases\Hello.robot">
+<test id="s1-t1" name="MyTestcase" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=Chrome</arg>
+<arg>url=https://www.idp.com/india/user-signup/</arg>
+<arg>executable_path=C:/Users/Ulaganathan.M/Downloads/chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220513 19:42:20.407" level="INFO">Opening browser 'Chrome' to base url 'https://www.idp.com/india/user-signup/'.</msg>
+<status status="PASS" starttime="20220513 19:42:20.407" endtime="20220513 19:43:03.020"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220513 19:43:03.021" endtime="20220513 19:43:03.220"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>var a=</arg>
+<arg>return arguments[0].shadowRoot</arg>
+<arg>ARGUMENTS</arg>
+<arg>(//*[@class="md hydrated"])[1]</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220513 19:43:03.222" level="INFO">Executing JavaScript:
+var a=return arguments[0].shadowRoot
+By using argument:
+'(//*[@class="md hydrated"])[1]'</msg>
+<msg timestamp="20220513 19:43:06.024" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220513 19:43:06.024" level="FAIL">JavascriptException: Message: javascript error: Unexpected token 'return'
+  (Session info: chrome=101.0.4951.67)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FFB8F3+2406643]
+	Ordinal0 [0x00F8AF31+1945393]
+	Ordinal0 [0x00E7C748+837448]
+	Ordinal0 [0x00E7F154+848212]
+	Ordinal0 [0x00E7F012+847890]
+	Ordinal0 [0x00E7F98A+850314]
+	Ordinal0 [0x00ED50C9+1200329]
+	Ordinal0 [0x00EC427C+1131132]
+	Ordinal0 [0x00ED4682+1197698]
+	Ordinal0 [0x00EC4096+1130646]
+	Ordinal0 [0x00E9E636+976438]
+	Ordinal0 [0x00E9F546+980294]
+	GetHandleVerifier [0x01269612+2498066]
+	GetHandleVerifier [0x0125C920+2445600]
+	GetHandleVerifier [0x01094F2A+579370]
+	GetHandleVerifier [0x01093D36+574774]
+	Ordinal0 [0x00F91C0B+1973259]
+	Ordinal0 [0x00F96688+1992328]
+	Ordinal0 [0x00F96775+1992565]
+	Ordinal0 [0x00F9F8D1+2029777]
+	BaseThreadInitThunk [0x766DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x775275F4+228]
+	RtlGetAppContainerNamedObjectPath [0x775275C4+180]
+</msg>
+<status status="FAIL" starttime="20220513 19:43:03.221" endtime="20220513 19:43:06.419"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>a</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220513 19:43:06.420" endtime="20220513 19:43:06.420"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//*[@alt='Ready to Cook']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220513 19:43:06.421" endtime="20220513 19:43:06.421"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@alt='Ready to Cook']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220513 19:43:06.421" endtime="20220513 19:43:06.421"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@data-qa-label='StreetNumberTxt']</arg>
+<arg>Triangle Drive, Taguig, Metro Manila</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220513 19:43:06.422" endtime="20220513 19:43:06.422"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@alt='Ready to Cook']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220513 19:43:06.422" endtime="20220513 19:43:06.422"/>
+</kw>
+<status status="FAIL" starttime="20220513 19:42:20.406" endtime="20220513 19:43:06.423">JavascriptException: Message: javascript error: Unexpected token 'return'
+  (Session info: chrome=101.0.4951.67)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FFB8F3+2406643]
+	Ordinal0 [0x00F8AF31+1945393]
+	Ordinal0 [0x00E7C748+837448]
+	Ordinal0 [0x00E7F154+848212]
+	Ordinal0 [0x00E7F012+847890]
+	Ordinal0 [0x00E7F98A+850314]
+	Ordinal0 [0x00ED50C9+1200329]
+	Ordinal0 [0x00EC427C+1131132]
+	Ordinal0 [0x00ED4682+1197698]
+	Ordinal0 [0x00EC4096+1130646]
+	Ordinal0 [0x00E9E636+976438]
+	Ordinal0 [0x00E9F546+980294]
+	GetHandleVerifier [0x01269612+2498066]
+	GetHandleVerifier [0x0125C920+2445600]
+	GetHandleVerifier [0x01094F2A+579370]
+	GetHandleVerifier [0x01093D36+574774]
+	Ordinal0 [0x00F91C0B+1973259]
+	Ordinal0 [0x00F96688+1992328]
+	Ordinal0 [0x00F96775+1992565]
+	Ordinal0 [0x00F9F8D1+2029777]
+	BaseThreadInitThunk [0x766DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x775275F4+228]
+	RtlGetAppContainerNamedObjectPath [0x775275C4+180]
+</status>
+</test>
+<status status="FAIL" starttime="20220513 19:42:16.427" endtime="20220513 19:43:06.425"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Hello">Hello</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
